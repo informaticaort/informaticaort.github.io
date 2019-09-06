@@ -13,6 +13,7 @@ Para ello se creará un repositorio por cada materia y alli dentro estarán los 
 4. Abrir la aplicación "Git bash", buscando "bash" en el menú inicio de Windows
 5. Utilizar el comando cd para elegir el directorio donde se quiere guardar los archivos descargados
 (Por ejemplo, el escritorio)
+
 ![5to paso](https://i.ibb.co/BCScJgy/1.png)
 6. Una vez elegida la ubicación, utilizar el comando "Git clone" seguido de la URL copiada en el paso 3
 ```

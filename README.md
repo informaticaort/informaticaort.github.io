@@ -29,7 +29,7 @@ A partir de ahora podés navegar libremente por la carpeta y visualizar y editar
 ![3er paso](https://i.ibb.co/8rh0RLR/1.png)
 4. Utilizar el comando 'Git add' de la siguiente manera:
 ```
-git add --all
+git add .
 ```
 5. Utilizar el comando 'git commit', escribiendo un mensaje que quedará asignado a los cambios realizados (es una referencia para poder saber que se agregó o modificó)
 ```

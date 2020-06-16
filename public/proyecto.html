@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <title>Portfolio Inform&aacute;tica</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+
+<body>
+  <nav class="nav justify-content-center bg-white shadow">
+    <a href="https://campus.almagro.ort.edu.ar/informatica" target="_blank">
+      <img class="py-4" src="img/logo.png" alt="Logo Informatica" width="94px">
+    </a>
+  </nav>
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Portfolio Item Heading -->
+    <h1 class="my-4">Taller de Programaci&oacute;n
+      <small>4to año</small>
+    </h1>
+
+    <!-- Portfolio Item Row -->
+    <div class="row">
+
+      <div class="col-md-8">
+        <img class="img-fluid" id="imgProyecto" src="" alt=""> <!--Tamaño: 750 x 500-->
+      </div>
+
+      <div class="col-md-4">
+        <h3 class="my-3">Descripci&oacute;n del Proyecto</h3>
+        <p id="descProy"></p>
+        <h3 class="my-3">Tenologías utilizadas</h3>
+        <ul id="tecnologias"></ul>
+        <div class="row">
+          <div class="col-12">
+            <span class="colorPpal"><i class="far fa-calendar-alt pb-2"></i></span><strong class="descripcionProyec">  Fecha de realizaci&oacute;n</strong>
+            <p id="fechaRealizacion"></p>
+          </div>
+          <div class="col-12 pb-2">
+            <span class="colorPpal"><i class="far fa-globe"></i></span><strong class="descripcionProyec"> Link del proyecto</strong>
+            <a href="#" id="linkProyecto" class="descripcionProyec" target="_blank">clic ac&aacute;</a>
+          </div>
+          <div class="col-12">
+            <span class="colorPpal"><i class="far fa-user-alt"></i></span><strong class="descripcionProyec"> Autor/a</strong>
+            <p id="autor"></p>
+          </div>         
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+    <!-- Related Projects Row -->
+    <h3 class="my-4">Otros proyectos</h3>
+
+    <div class="row">
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        </a>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <a href="#">
+          <img class="img-fluid" src="http://placehold.it/500x300" alt="">
+        </a>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js">
+    </script>
+    <!-- SDKs for Firebase products -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="js/firebase-app.js"></script>
+
+    <!-- Firebase products -->
+    <script src="js/firebase-firestore.js"></script>
+
+    <!-- Inicio instancia Firebase -->
+    <script src="js/init-firebase.js"></script>
+
+    <script src="js/main.js"></script>
+    <script>obtenerProyecto("4to año", "Programacion");</script>
+</body>
+
+</html>

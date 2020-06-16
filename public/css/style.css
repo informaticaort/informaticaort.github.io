@@ -1,0 +1,118 @@
+/*--- HOME MATERIA ---*/
+.tituloHome {
+    font-weight: 200;
+    color: #ffffff;
+    font-size: 60px;
+}
+.parrafoHome{
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: 400;
+    color: rgba(255,255,255,0.8);
+}
+#home{
+    background-image: url(../img/background-prg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 60px 0 170px 0;
+}
+#portfolio{
+    margin-top: -128px;
+    /*height:auto;
+    min-height:420px;
+    height:auto !important;
+    height:420px;*/
+}
+#filtros-portfolio li a{
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+#filtros-portfolio li a.active, #filtros-portfolio li a:hover{
+    background: #ad2540;
+    text-decoration: none;
+}
+.list-inline {
+    display: flex;
+    justify-content: center;
+}
+.awesome-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.awesome-img img{
+    transform: scale(1);
+    transition: 0.4s;
+}
+.single-awesome-project{
+    overflow: hidden;
+    position: relative;
+}
+.single-awesome-project:hover .awesome-img img{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+.awesome-img > a {
+    display: block;
+    position: relative;
+}
+.project-dec h4 {
+    color: #fff;
+    font-size: 22px;
+    position: absolute;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.project-dec{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #007e8e; 
+}
+
+.single-awesome-project:hover .project-dec{
+
+    opacity: 1;
+}
+/*--- FIN HOME MATERIA ---*/
+/*--- DETALLE PROYECTO ---*/
+.tituloDetalles
+{
+    font-weight: 700;
+    font-size: 30px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 20px;
+}
+.descripcionProyec{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.colorPpal{
+    color:#007e8e;
+
+/*--- FIN DETALLE PROYECTO ---*/}

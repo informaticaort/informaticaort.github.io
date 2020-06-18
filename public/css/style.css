@@ -121,3 +121,19 @@
     padding-top: 40px;
 }
 /*--- FIN DETALLE PROYECTO ---*/
+
+/*--- ESTILOS COMUNES ---*/
+footer {
+    background-color:#02626f;
+    color: #fff;
+    margin-top: 40px;
+}
+footer a {
+    color: #fff;
+}
+footer .footer-copyright {
+    overflow: hidden;
+    color: rgba(255,255,255,0.6);
+    background-color: rgba(0,0,0,0.2);
+}
+/*--- FIN ESTILOS COMUNES ---*/

@@ -114,5 +114,10 @@
 }
 .colorPpal{
     color:#007e8e;
-
-/*--- FIN DETALLE PROYECTO ---*/}
+}
+.container a span{
+    color: #ad2540;
+    font-size: 35px;
+    padding-top: 40px;
+}
+/*--- FIN DETALLE PROYECTO ---*/

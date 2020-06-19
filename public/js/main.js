@@ -2,6 +2,7 @@ function listarProyectos(año, materia){
   var listadoProyectos = document.getElementById('project-content');
   //Lista todos los proyectos de una materia especifica
  db.collection(año).doc(materia).collection("Proyectos").get().then(function(querySnapshot) {
+  console.log(querySnapshot);
       querySnapshot.forEach(function(doc) {
           var xmlString = "<div class='col-md-4 col-sm-6  py-5 "+
           doc.data().categoria + "'> <a href='proyecto.html?id="+doc.id+"'><div class='single-awesome-project'><img class='img-fluid' src='" +
@@ -9,7 +10,11 @@ function listarProyectos(año, materia){
           doc.data().autor + "</h4></div></div></a></div>";
           listadoProyectos.innerHTML+=xmlString;
       });
+      mostrarPagina();
   });
+  
+  
+  
 }
 
 function obtenerProyecto(año, materia){
@@ -18,7 +23,7 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 if(!urlParams.has('id'))
 {
-  window.location.replace("../error.html");
+  window.location.replace("error.html");
 }
 const idProyecto = urlParams.get('id')
 var docRef = db.collection(año).doc(materia).collection("Proyectos").doc(idProyecto);
@@ -54,13 +59,15 @@ docRef.get().then(function(doc) {
         itemTecnologia.innerHTML=currentValue;
         tecnologias.appendChild(itemTecnologia);
       });
+      mostrarPagina();
     } else {
-        window.location.replace("../error.html");
+        window.location.replace("error.html");
     }
 }).catch(function(error) {
   console.error(error);
-  window.location.replace("../error.html");
+  window.location.replace("error.html");
 });
+
 }
 
 function crearIndicadoresCarousel(cantImgs){
@@ -78,4 +85,8 @@ function crearIndicadoresCarousel(cantImgs){
     indicadoresCarousel[0].appendChild(indicadorCarousel);
   }
   
+}
+function mostrarPagina() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("contenido").style.display = "block";
 }

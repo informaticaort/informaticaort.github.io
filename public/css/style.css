@@ -2,10 +2,10 @@
 .tituloHome {
     font-weight: 200;
     color: #ffffff;
-    font-size: 60px;
+    font-size: 6vh;
 }
 .parrafoHome{
-    font-size: 18px;
+    font-size: 2vh;
     line-height: 160%;
     font-weight: 400;
     color: rgba(255,255,255,0.8);

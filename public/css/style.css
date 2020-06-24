@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+  }
+  
 /*--- HOME MATERIA ---*/
 .tituloHome {
     font-weight: 200;
@@ -19,6 +23,8 @@
 }
 #portfolio{
     margin-top: -128px;
+    flex: 1 0 auto;
+    height: 100%;
     /*height:auto;
     min-height:420px;
     height:auto !important;
@@ -44,6 +50,11 @@
     display: flex;
     justify-content: center;
 }
+#contenido {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 .awesome-img{
     display: block;
     width: 100%;
@@ -122,14 +133,19 @@
 }
 /*--- FIN DETALLE PROYECTO ---*/
 
-/*--- EOOTER ---*/
+/*--- FOOTER ---*/
 footer {
     background-color:#02626f;
     color: #fff;
     margin-top: 40px;
+
+    flex-shrink: 0;
 }
 footer a {
     color: #fff;
+}
+footer a:hover{
+    color: #06a9bf;
 }
 footer .footer-copyright {
     overflow: hidden;
@@ -192,3 +208,5 @@ footer .footer-copyright {
     text-align: center;
   }
 /*--- FIN SPINNER LOADER ---*/
+
+

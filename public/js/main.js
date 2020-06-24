@@ -4,7 +4,7 @@ function listarProyectos(año, materia){
  db.collection(año).doc(materia).collection("Proyectos").get().then(function(querySnapshot) {
   console.log(querySnapshot);
       querySnapshot.forEach(function(doc) {
-          var xmlString = "<div class='col-md-4 col-sm-6  py-5 "+
+          var xmlString = "<div class='col-md-4 col-sm-6 py-5 "+
           doc.data().categoria + "'> <a href='proyecto.html?id="+doc.id+"'><div class='single-awesome-project'><img class='img-fluid' src='" +
           doc.data().imagenes[0] + "' alt=''/><div class='project-dec'><h4>" +
           doc.data().autor + "</h4></div></div></a></div>";
@@ -88,5 +88,5 @@ function crearIndicadoresCarousel(cantImgs){
 }
 function mostrarPagina() {
   document.getElementById("loader").style.display = "none";
-  document.getElementById("contenido").style.display = "block";
+  document.getElementById("contenido").style.display = "flex";
 }

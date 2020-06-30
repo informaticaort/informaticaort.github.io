@@ -22,7 +22,7 @@ html, body {
     padding: 60px 0 170px 0;
 }
 #portfolio{
-    margin-top: -128px;
+    margin-top: -150px;
     flex: 1 0 auto;
     height: 100%;
     /*height:auto;
@@ -137,7 +137,7 @@ html, body {
 footer {
     background-color:#02626f;
     color: #fff;
-    margin-top: 40px;
+    margin-top: 150px;
 
     flex-shrink: 0;
 }

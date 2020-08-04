@@ -9,6 +9,7 @@ function listarProyectos(año, materia){
           doc.data().imagenes[0] + "' alt=''/><div class='project-dec'><h4>" +
           doc.data().autor + "</h4></div></div></a></div>";
           listadoProyectos.innerHTML+=xmlString;
+          listadoProyectos.style.height = "";
       });
       mostrarPagina();
   });
@@ -88,5 +89,5 @@ function crearIndicadoresCarousel(cantImgs){
 }
 function mostrarPagina() {
   document.getElementById("loader").style.display = "none";
-  document.getElementById("contenido").style.display = "flex";
+  document.getElementById("contenido").style.display = "block";
 }

@@ -1,148 +1,126 @@
 <!doctype html>
 <html lang="es">
-
-<head>
-    <title>Portfolio Inform&aacute;tica</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- Estilos propios -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-</head>
-
-<body>
-    <div id="loader"></div>
-    <div style="display:none;" id="contenido" class="animate-bottom">
-      <div id="content-wrap">
-        <section id="home" class="m-md-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-10 col-md-8 mx-auto text-center">
-                        <a href="https://campus.almagro.ort.edu.ar/informatica" target="_blank">
-                            <img class="py-4" src="img/logo.png" alt="Logo Informatica">
-                        </a>
-                        <h1 class="tituloHome mb-3">Taller de Programaci&oacute;n<br><strong>4to año</strong></h1>
-                        <p class="parrafoHome">La materia Taller de Programaci&oacute;n de cuarto año, tiene como objetivo introducir a los alumnos y alumnas de la especialidad Inform&aacute;tica al mundo del Diseño y la Programaci&oacute;n Web. A lo largo de todo el año se ven los siguientes contenidos: HTML, CSS, maquetado con Bootstrap, el patr&oacute;n de arquitectura MVC y comunicaci&oacute;n con APIs</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="portfolio">
-            <div class="container">
-                <div class="row" id="proyectos">
-                    <div class="col-12 mx-auto">
-                        <ul id="filtros-portfolio" class="list-inline project-menu">
-                            <li class="mr-2">
-                                <a href="#" data-filter="*" class="active">Todos</a>
-                            </li>
-                            <li class="mr-2">
-                                <a href="#" data-filter=".html">html</a>
-                            </li>
-                            <li class="mr-2">
-                                <a href="#" data-filter=".bootstrap">Bootstrap</a>
-                            </li>
-                            <li>
-                                <a href="#" data-filter=".mvc">mvc</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="row" id="project-content"></div>
-                </div>
-            </div>
-        </section>
-      </div>
-        <!-- Footer -->
-        <footer>
-          <!-- Footer Elements -->
-          <div class="container">
-            <!-- Grid row-->
-            <div class="row">
-              <!-- Grid column -->
-              <div class="col-md-12 py-5">
-                <div class="mb-1 text-center">
-                  <!-- Twitter -->
-                  <a class="tw-ic" href="https://twitter.com/informaticaort" target="_blank">
-                    <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                  </a>
-                  <!--Instagram-->
-                  <a class="ins-ic" href="https://www.instagram.com/informatica_ort/" target="_blank">
-                    <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                  </a>
-                  <!--Campus-->
-                  <a class="pin-ic" href="https://campus.almagro.ort.edu.ar/informatica/" target="_blank">
-                    <i class="fal fa-link fa-lg white-text fa-2x"> </i>
-                  </a>
-                </div>
+  <head>
+      <title>Portfolio Inform&aacute;tica</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Estilos propios -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="fontawesome/css/all.min.css">
+      <!-- Favicon -->
+      <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+      <link rel="manifest" href="img/favicon/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+      <div id="loader"></div>
+      <div style="display:none;" id="contenido" class="animate-bottom pb-5">
+        <div id="content-wrap">
+          <section id="home" class="m-md-4">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-10 col-md-8 mx-auto text-center">
+                          <a href="https://campus.almagro.ort.edu.ar/informatica" target="_blank">
+                              <img class="py-4" src="img/logo.png" alt="Logo Informatica">
+                          </a>
+                          <h1 class="tituloHome mb-3">Taller de Programaci&oacute;n<br><strong>4to año</strong></h1>
+                          <p class="parrafoHome">La materia Taller de Programaci&oacute;n de cuarto año, tiene como objetivo introducir a los alumnos y alumnas de la especialidad Inform&aacute;tica al mundo del Diseño y la Programaci&oacute;n Web. A lo largo de todo el año se ven los siguientes contenidos: HTML, CSS, maquetado con Bootstrap, el patr&oacute;n de arquitectura MVC y comunicaci&oacute;n con APIs</p>
+                      </div>
+                  </div>
               </div>
-              <!-- Grid column -->
-
+          </section>
+          <section id="portfolio">
+              <div class="container">
+                  <div class="row" id="proyectos">
+                      <div class="col-12 mx-auto">
+                          <ul id="filtros-portfolio" class="list-inline project-menu">
+                              <li class="mr-2">
+                                  <a href="#" data-filter="*" class="active">Todos</a>
+                              </li>
+                              <li class="mr-2">
+                                  <a href="#" data-filter=".html">html</a>
+                              </li>
+                              <li class="mr-2">
+                                  <a href="#" data-filter=".bootstrap">Bootstrap</a>
+                              </li>
+                              <li>
+                                  <a href="#" data-filter=".mvc">mvc</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </section>
+        </div>
+          <!-- Footer -->
+          <footer>
+            <!-- Footer Elements -->
+            <div class="container">
+              <!-- Grid row-->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-12 py-5">
+                  <div class="mb-1 text-center">
+                    <!-- Twitter -->
+                    <a class="tw-ic" href="https://twitter.com/informaticaort" target="_blank">
+                      <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic" href="https://www.instagram.com/informatica_ort/" target="_blank">
+                      <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                    </a>
+                    <!--Campus-->
+                    <a class="pin-ic" href="https://campus.almagro.ort.edu.ar/informatica/" target="_blank">
+                      <i class="fal fa-link fa-lg white-text fa-2x"> </i>
+                    </a>
+                  </div>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row-->
             </div>
-            <!-- Grid row-->
-
-          </div>
-          <!-- Footer Elements -->
-
-          <!-- Copyright -->
-          <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://campus.almagro.ort.edu.ar/informatica/" target="_blank"> Inform&aacute;tica ORT</a>
-          </div>
-          <!-- Copyright -->
-
-        </footer>
-        <!-- Footer -->
-    </div>
-    
-
-    </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js">
-    </script>
-    <!-- SDKs for Firebase products -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="js/firebase-app.js"></script>
-
-    <!-- Firebase products -->
-    <script src="js/firebase-firestore.js"></script>
-
-    <!-- Inicio instancia Firebase -->
-    <script src="js/init-firebase.js"></script>
-
-    <script src="js/main.js"></script>
-
-    <script src="js/isotope.pkgd.min.js"></script>  
-    <script src="js/filtros-portfolio.js"></script>
-    
-    <script>listarProyectos("4to año", "Programacion");</script>
-
-    
-
-</body>
-
+            <!-- Footer Elements -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© <script>document.write(new Date().getFullYear())</script> Copyright:
+              <a href="https://campus.almagro.ort.edu.ar/informatica/" target="_blank"> Inform&aacute;tica ORT</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+      </div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="js/jquery-3.3.1.slim.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js">
+      </script>
+      <!-- SDKs for Firebase products -->
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="js/firebase-app.js"></script>
+      <!-- Firebase products -->
+      <script src="js/firebase-firestore.js"></script>
+      <!-- Inicio instancia Firebase -->
+      <script src="js/init-firebase.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/isotope.pkgd.min.js"></script>  
+      <script src="js/filtros-portfolio.js"></script>
+      <script>listarProyectos("4to año", "Programacion");</script>
+  </body>
 </html>
